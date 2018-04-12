@@ -1,0 +1,73 @@
+#image-holder {
+    background: lightblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    
+    height: 700px;
+    width: 75%;
+   
+   
+  }
+body{
+    color: black;
+    background-image: url(../images/disneybackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 1.5px 1.5px 0px white;
+    
+}
+#title{
+    margin: 0 auto;
+}
+#time{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 75px;
+}
+
+#question{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 75%;
+    font-size: 30px;
+}
+
+#a, #b, #c, #d{
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+#a:hover, #b:hover, #c:hover, #d:hover{
+    background-color: blue; 
+}
+#button{
+    text-align: center;
+  
+}
+#image{
+    text-align: center;
+}
+#answer{
+    text-align: center;
+    font-size: 25px;
+
+}
+#start, #restart{
+    font-size: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+#start{
+   position: relative;
+   top: 200px;
+}
