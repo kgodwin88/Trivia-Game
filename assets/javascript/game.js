@@ -14,16 +14,16 @@ $(document).ready(function() {
     ];
     answers = [
         [],
-        ["Your answer is <br>","BB-8 <br>", "<img src = './assets/images/bb-8.gif' />"],
-        ["Your answer is <br>", "Five Dozen <br>", "<img src = './assets/images/gaston.gif' />"],
-        ["Your answer is <br>", "Bread <br>", "<img src = './assets/images/aladdin.gif' />"],
-        ["Your answer is <br>", "Woody", "<img src = './assets/images/woody.gif' />"],
-        ["Your answer is <br>", "15", "<img src = './assets/images/puppies.gif' />"],
-        ["Your answer is <br>", "Buzz Lightyear", "<img src = './assets/images/buzz.gif' />"],
-        ["Your answer is <br>", "Cars", "<img src = './assets/images/cars.gif' />"],
-        ["Your answer is <br>", "Paige O'Hara", "<img src = './assets/images/beauty.gif' />"],
-        ["Your answer is <br>", "10,000 years", "<img src = './assets/images/genie.gif' />"],
-        ["Your answer is <br>", "Snow White", "<img src = './assets/images/snowwhite.gif' />"]
+        ["Your answer is <br>","BB-8 <br>", "<img src = './assets/images/bb-8.gif' class = 'image-responsive' style = 'width: 400px; height:250px;'/>"],
+        ["Your answer is <br>", "Five Dozen <br>", "<img src = './assets/images/gaston.gif' class = 'image-responsive' style = 'width: 300px; height:250px;'/>"],
+        ["Your answer is <br>", "Bread <br>", "<img src = './assets/images/aladdin.gif' class = 'image-responsive' style = 'width: 300px; height:250px;'/>"],
+        ["Your answer is <br>", "Woody", "<img src = './assets/images/woody.gif' class = 'image-responsive' style = 'width: 300px; height:250px;'/>"],
+        ["Your answer is <br>", "15", "<img src = './assets/images/puppies.gif' class = 'image-responsive' style = 'width: 300px; height:250px;'/>"],
+        ["Your answer is <br>", "Buzz Lightyear", "<img src = './assets/images/buzz.gif' class = 'image-responsive' style = 'width: 300px; height:250px;'/>"],
+        ["Your answer is <br>", "Cars", "<img src = './assets/images/cars.gif' class = 'image-responsive' style = 'width: 300px; height:250px;'/>"],
+        ["Your answer is <br>", "Paige O'Hara", "<img src = './assets/images/beauty.gif' class = 'image-responsive' style = 'width: 300px; height:250px;'/>"],
+        ["Your answer is <br>", "10,000 years", "<img src = './assets/images/genie.gif' class = 'image-responsive' style = 'width: 300px; height:250px;' />"],
+        ["Your answer is <br>", "Snow White", "<img src = './assets/images/snowwhite.gif' class = 'image-responsive' style = 'width: 300px; height:250px;'/>"]
     ];
     
     var timeLeft = 15;
@@ -49,6 +49,11 @@ $(document).ready(function() {
         incorrect = 0;
         correct = 0;
         pos = 0;
+        $("#question").hide();
+        $("#a").hide();
+        $("#c").hide();
+        $("#b").hide();
+        $("#d").hide();
         $("#time").hide();
         $("#answer").hide();
         $("#button").show();
@@ -78,7 +83,7 @@ $(document).ready(function() {
                 $("#a").html(chA);
                 $("#b").html(chB);
                 $("#c").html(chC);
-                $("#d").html(chD + "<br> <br>");
+                $("#d").html(chD);
                 $("#image").html(" ");
                 $("#a").off("click")
                 $("#a").on("click", function(){
